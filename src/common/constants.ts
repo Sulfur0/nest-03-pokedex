@@ -1,0 +1,1 @@
+export const MONGODB_DUPLICATE_ENTRY_ERR = 11000;
