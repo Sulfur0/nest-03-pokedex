@@ -1,10 +1,10 @@
 import { IsNumber, IsOptional, IsPositive, Min } from 'class-validator';
 
 export class PaginationDto {
-  constructor(limit, offset) {
-    this.limit = limit;
-    this.offset = offset;
-  }
+  // constructor(limit, offset) {
+  //   this.limit = limit;
+  //   this.offset = offset;
+  // }
   @IsOptional()
   @IsNumber()
   @IsPositive()

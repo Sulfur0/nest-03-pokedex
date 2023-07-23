@@ -23,16 +23,24 @@ npm install
 npm i -g @nestjs/cli
 ```
 
-4. Levantar la base de datos de manera detached
+4. Clonar el archivo '**.env.example**' al archivo '**.env**' y hacer los cambios necesarios a las variables de entorno
+
+5. Levantar la base de datos de manera detached
 
 ```
 docker-compose up -d
 ```
 
-5. Recargar o reconstruir la base de datos
+6. Levantar el proyecto en entorno de desarrollo
+
+```
+npm run start:dev
+```
+
+6. Recargar o reconstruir la base de datos
    http://localhost:3000/api/seed
 
-6. limpiar la base de datos
+7. limpiar la base de datos
    http://localhost:3000/api/seed/clear
 
 ## Stack usado

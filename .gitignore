@@ -36,4 +36,9 @@ lerna-debug.log*
 
 # Mongo
 /mongo
+
+# Environments
+.env
+
+# Misc
 todo.txt
