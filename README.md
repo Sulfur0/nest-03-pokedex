@@ -29,6 +29,12 @@ npm i -g @nestjs/cli
 docker-compose up -d
 ```
 
+5. Recargar o reconstruir la base de datos
+   http://localhost:3000/api/seed
+
+6. limpiar la base de datos
+   http://localhost:3000/api/seed/clear
+
 ## Stack usado
 
 - MongoDB
