@@ -47,3 +47,7 @@ npm run start:dev
 
 - MongoDB
 - Nest
+
+## URL del deployment en Railway
+
+- https://railway.app/project/8c7c81f9-81b6-4502-a58b-073703876937
