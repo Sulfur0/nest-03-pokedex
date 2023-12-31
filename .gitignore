@@ -39,6 +39,7 @@ lerna-debug.log*
 
 # Environments
 .env
+.env.example
 
 # Misc
 todo.txt

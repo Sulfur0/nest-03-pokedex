@@ -4,12 +4,13 @@ import { PokemonController } from './pokemon.controller';
 import { PokemonV2Controller } from './pokemonv2.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Pokemon, PokemonSchema } from './entities/pokemon.entity';
-import { ConfigService } from '@nestjs/config';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   controllers: [PokemonController, PokemonV2Controller],
-  providers: [PokemonService, ConfigService],
+  providers: [PokemonService],
   imports: [
+    ConfigModule,
     MongooseModule.forFeature([
       {
         name: Pokemon.name,

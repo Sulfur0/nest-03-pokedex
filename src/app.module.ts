@@ -18,7 +18,7 @@ import { JoiValidationSchema } from './config/joi.validation';
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'),
     }),
-    MongooseModule.forRoot(process.env.MONGO_URL),
+    MongooseModule.forRoot(process.env.MONGO_URL, { dbName: 'pokemonDB' }),
     PokemonModule,
     CommonModule,
     SeedModule,
@@ -26,8 +26,4 @@ import { JoiValidationSchema } from './config/joi.validation';
   controllers: [],
   providers: [],
 })
-export class AppModule {
-  constructor() {
-    console.log(process.env.MONGO_URL);
-  }
-}
+export class AppModule {}

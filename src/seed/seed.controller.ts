@@ -18,7 +18,7 @@ export class SeedController {
     return this.seedService.executeSeed();
   }
 
-  @Post('seed/clear')
+  @Post('/clear')
   clearDB() {
     return this.seedService.clearDB();
   }

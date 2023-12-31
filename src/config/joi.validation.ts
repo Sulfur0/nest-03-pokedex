@@ -4,4 +4,5 @@ export const JoiValidationSchema = joi.object({
   MONGO_URL: joi.required(),
   PORT: joi.number().default(3005),
   DEFAULT_LIMIT: joi.number().default(6),
+  DB_NAME: joi.string().default('pokemon'),
 });

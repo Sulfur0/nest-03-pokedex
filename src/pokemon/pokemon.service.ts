@@ -15,15 +15,16 @@ import { ConfigService } from '@nestjs/config';
 
 @Injectable()
 export class PokemonService {
-  private defaultLimit = 5;
+  private defaultLimit: number;
   constructor(
     @InjectModel(Pokemon.name)
     private readonly pokemonModel: Model<Pokemon>,
     private readonly configService: ConfigService,
   ) {
-    this.defaultLimit = configService.getOrThrow<number>(
+    const envDefaultLimit = configService.getOrThrow<number>(
       'apiSettings.defaultLimit',
     );
+    this.defaultLimit = envDefaultLimit;
   }
   async create(createPokemonDto: CreatePokemonDto) {
     try {
