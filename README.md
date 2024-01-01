@@ -38,10 +38,10 @@ npm run start:dev
 ```
 
 6. Recargar o reconstruir la base de datos
-   http://localhost:3000/api/seed
+   http://localhost:4000/api/seed
 
 7. limpiar la base de datos
-   http://localhost:3000/api/seed/clear
+   http://localhost:4000/api/seed/clear
 
 ## Stack usado
 
@@ -51,3 +51,25 @@ npm run start:dev
 ## URL del deployment en Railway
 
 - https://railway.app/project/8c7c81f9-81b6-4502-a58b-073703876937
+
+## Production Build
+
+1.- Crear el archivo `.env.prod`
+
+2.- Llenar variables de entorno de prod
+
+3.- Crear la nueva imágen utilizando los comandos de docker
+
+## Dockerization
+
+### Build
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
+### Run
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
+```

@@ -39,7 +39,9 @@ lerna-debug.log*
 
 # Environments
 .env
+.env.prod
 .env.example
 
 # Misc
 todo.txt
+package-lock.json
